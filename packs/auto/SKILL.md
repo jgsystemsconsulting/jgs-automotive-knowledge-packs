@@ -71,14 +71,27 @@ Output goes in the reply unless the user names a file. A deliverable with no mat
 ### Topics
 | Topic | Keywords | Packs (best first) |
 |---|---|---|
+| Vehicle cybersecurity programme & practices | vehicle cybersecurity, cybersecurity programme, cybersecurity best practices, product cybersecurity, leadership priority, risk assessment, asset inventory, software bill of materials, SBOM, penetration testing, Auto-ISAC, information sharing, vulnerability reporting, coordinated disclosure, incident response, self-audit, education, aftermarket devices, serviceability, debug access, cryptography, diagnostics, in-vehicle networks, event logs, wireless, over-the-air updates, OTA | `nhtsa-vehicle`, `automotive-signpost` |
+| Automated driving systems (ADS) | ADS, automated driving system, driving automation, SAE levels, Level 3, Level 4, Level 5, safety design elements, ODD, operational design domain, OEDR, fallback, minimal risk condition, HMI, validation methods, crashworthiness, post-crash ADS behavior, data recording, VSSA, voluntary safety self-assessment, consumer education, legislatures, state highway safety officials | `nhtsa-vehicle`, `automotive-signpost` |
+| FMVSS & Part 571 regulatory landscape | FMVSS, Part 571, self-certification, Subpart A, Subpart B, controls and displays, Standard No. 101, brake systems, 105, 135, rear visibility, 111, accelerator control, 124, electronic stability control, ESC, 126, 136, tire pressure monitoring, TPMS, 138, minimum sound, 141, GVWR, telltale, incorporation by reference | `nhtsa-vehicle` |
+| Functional safety & ISO 26262 | functional safety, ISO 26262, IEC 61508, ASIL, automotive safety integrity level, safety lifecycle, hazard analysis and risk assessment, safety case | `nhtsa-vehicle`, `functional-safety-signpost`, `automotive-signpost` |
+| SOTIF | SOTIF, safety of the intended functionality, ISO 21448, intended functionality, perception limits, insufficiency without fault | `nhtsa-vehicle`, `functional-safety-signpost`, `automotive-signpost` |
+| Automotive SPICE & process assessment | Automotive SPICE, ASPICE, process assessment, process capability, VDA QMC | `automotive-signpost`, `nhtsa-vehicle` |
+| UNECE R155/R156 cybersecurity & software update regulations | UNECE R155, UNECE R156, R155, R156, cyber security management system, CSMS, software update management system, SUMS | `automotive-signpost`, `nhtsa-vehicle` |
+| UL 4600 & autonomous product evaluation | UL 4600, autonomous products, safety case evaluation, autonomous vehicle evaluation framework | `functional-safety-signpost`, `nhtsa-vehicle` |
 
 ### Agency contexts
 | Agency | Keywords | Packs |
 |---|---|---|
+| NHTSA | NHTSA, National Highway Traffic Safety Administration, FMVSS, USDOT, US, federal, Part 571 | `nhtsa-vehicle`, `automotive-signpost`, `functional-safety-signpost` |
 
 ### Deliverables
 | Deliverable | Keywords | Draft | Review | Verify |
 |---|---|---|---|---|
+| Cybersecurity premarket section | cybersecurity section, premarket cybersecurity, cybersecurity programme section, product cybersecurity section | `nhtsa-vehicle` | `nhtsa-vehicle` | `nhtsa-vehicle` |
+| ADS safety design outline | ADS safety design outline, safety design elements outline, ADS design documentation, ADS safety process | `nhtsa-vehicle` | `nhtsa-vehicle` | `nhtsa-vehicle` |
+| FMVSS compliance matrix | FMVSS compliance matrix, Part 571 compliance matrix, applicable FMVSS list, self-certification matrix | `nhtsa-vehicle` | `nhtsa-vehicle` | `nhtsa-vehicle` |
+| CSA assurance record | CSA assurance record, cybersecurity assurance record, assurance record, cybersecurity assurance case | `nhtsa-vehicle` | `nhtsa-vehicle` | `nhtsa-vehicle` |
 
 ### Licences
 | Pack | Licence |
