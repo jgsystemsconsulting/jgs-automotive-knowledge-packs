@@ -1,0 +1,16 @@
+slug: automotive-signpost
+kind: signpost
+title: "Automotive Software and Cybersecurity Standards: Signpost (pointers only)"
+publisher: "JG Systems Consulting Ltd."
+license: "MIT"
+license_tier: 2
+commercial_use: true
+notes: >
+  Signpost, not a knowledge pack. Zero standards-body text. Rows carry
+  designation, title, edition, owner, status, and the owner's URL only.
+  ISO 26262, ISO/SAE 21434, SAE J3016, and ISO 21448 (SOTIF) are Excluded
+  under docs/SOURCE-VETTING.md. Automotive SPICE 4.0 is a free VDA QMC
+  download but (c) VDA QMC with no derivatives: cited, never copied.
+  UNECE R155 and R156 are free downloads but (c) UNECE, citation only.
+  Free paths point to nhtsa-vehicle in this repo and to fleet sibling
+  repos by name. Trademarks named for identification only.

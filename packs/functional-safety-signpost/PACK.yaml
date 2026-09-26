@@ -1,0 +1,14 @@
+slug: functional-safety-signpost
+kind: signpost
+title: "Functional Safety Standards: Signpost (pointers only)"
+publisher: "JG Systems Consulting Ltd."
+license: "MIT"
+license_tier: 2
+commercial_use: true
+notes: >
+  Signpost, not a knowledge pack. Zero standards-body text. Rows carry
+  designation, title, edition, owner, status, and the owner's URL only.
+  IEC 61508, ISO 26262, ISO 21448 (SOTIF), and UL 4600 are Excluded under
+  docs/SOURCE-VETTING.md. Free paths point to nhtsa-vehicle in this repo
+  and to jgs-se-knowledge-packs and jgs-med-device-knowledge-packs by
+  name. Trademarks named for identification only.
