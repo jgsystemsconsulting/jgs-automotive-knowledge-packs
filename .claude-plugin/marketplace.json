@@ -1,0 +1,12 @@
+{
+  "name": "Automotive",
+  "description": "JG Systems Consulting catalogue of licence-vetted Automotive knowledge-pack skills for coding agents.",
+  "owner": { "name": "JG Systems Consulting Ltd.", "url": "https://github.com/jgsystemsconsulting/jgs-automotive-knowledge-packs" },
+  "plugins": [
+    {
+      "name": "automotive",
+      "source": "./",
+      "description": "Installable Automotive knowledge packs reconstructed from open sources."
+    }
+  ]
+}
