@@ -15,4 +15,5 @@ All notable changes to this project are documented here. Format follows
 
 ### Added
 
-- Template initialised from jgs-se-knowledge-packs.
+- Initial public release: nhtsa-vehicle knowledge pack (3 NHTSA/CFR sources),
+  automotive-signpost, functional-safety-signpost, and /auto orchestrator.

@@ -19,17 +19,21 @@ This product contains two separately licensed layers:
 Third-party source attributions (one block per shipped content pack)
 -----------------------------------------------------------------------------------
 
-<!-- TEMPLATE PLACEHOLDER: the template ships no pack content. When a pack is ported
-     or created, append one attribution block here in the exemplar format:
+[pack: nhtsa-vehicle]
+  Source : NHTSA Cybersecurity Best Practices for the Safety of Modern Vehicles +
+           Automated Driving Systems 2.0 + 49 CFR Part 571 (Federal Motor Vehicle
+           Safety Standards) selections
+  Author : National Highway Traffic Safety Administration (NHTSA, US Department of Transportation)
+  Licence: Public Domain -- US Government work (17 U.S.C. 105)
+  Changes: reconstructed as synthesized reference notes (not a reproduction)
+  Terms  : public domain, no copyright. Attribution to NHTSA is courtesy, not
+           obligation; NHTSA does not endorse this pack. See packs/nhtsa-vehicle/LICENSE.
 
-[pack: <slug>]
-  Source : <full source title, version, and identifier>
-  Author : <publishing organisation>
-  Licence: <licence name and URL, or public-domain basis>
-  Changes: <how the pack relates to the source>
-  Terms  : <binding conditions and caveats, ending with a pointer to
-            packs/<slug>/LICENSE>
--->
+-----------------------------------------------------------------------------------
+Standards bodies named in these packs (ISO, SAE, VDA QMC, UNECE, UL, IEC) are
+cited by designation only, for identification; their standards remain their
+property and no endorsement or reproduction is implied.
+-----------------------------------------------------------------------------------
 
 -----------------------------------------------------------------------------------
 The build pipeline uses the jgs-reference-skill extraction engine (MIT License,

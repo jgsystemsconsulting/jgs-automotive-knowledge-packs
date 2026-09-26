@@ -8,13 +8,12 @@ SPDX-License-Identifier: MIT
 <p align="center">
   <img src="https://img.shields.io/badge/license-MIT%20(tooling)-blue" alt="License: MIT (tooling)">
   <img src="https://img.shields.io/badge/version-0.1.0-green" alt="Version 0.1.0">
-  <img src="https://img.shields.io/badge/type-template-orange" alt="Template repository">
 </p>
 
 <p align="center">
-  <strong>Starting point for a sector knowledge-pack catalogue. This repository is a
-  TEMPLATE: it is not installed as packs. Mint your own sector repo from it.
-  (Minted repos: replace this section with your catalogue introduction.)</strong>
+  <strong>Installable catalogue of automotive engineering knowledge-pack skills for
+  coding agents, with one orchestrator that routes free-text sector questions to
+  the right packs.</strong>
 </p>
 
 **Copyright (c) 2026 JG Systems Consulting Ltd. - MIT License (tooling); pack content under each source's own licence (see [NOTICE](NOTICE)).**
@@ -23,71 +22,37 @@ SPDX-License-Identifier: MIT
 
 ## What it is
 
-This repo is the source template for the industry knowledge-pack fleet: one repo per
-engineering sector, each an installable catalogue of knowledge-pack skills for coding
-agents, with a single orchestrator that routes free-text sector questions to the right
-packs. The template carries the legal root, the pack specification, the validators and
-CI gates, and the installer, so a minted repo starts compliant and gated.
+This repo is the Automotive member of the industry knowledge-pack fleet: one repo
+per engineering sector, each an installable catalogue of knowledge-pack skills for
+coding agents. The packs are reconstructed reference notes on vehicle cybersecurity
+best practices (NHTSA), Automated Driving Systems guidance, and the FMVSS
+(Federal Motor Vehicle Safety Standards) landscape, plus signposts to the wider
+automotive and functional-safety standards world (ISO 26262, ISO/SAE 21434, UNECE
+WP.29 and related instruments, cited by designation only). It is engineering
+signposting and reference material, not legal or regulatory advice.
 
-Minting copies the tree, substitutes four identity tokens (`automotive`,
-`Automotive`, `auto`, `jgs-automotive-knowledge-packs`) in file contents and path names,
-and refuses to finish if any token survives in the output. Fleet-wide naming, layout,
-and release rules: [docs/FLEET-CONVENTIONS.md](docs/FLEET-CONVENTIONS.md).
-
-## How to mint
+## Install
 
 ```bash
-python tooling/instantiate.py --sector <slug> --name "<name>" --orch <slug> --target <path>
+python install.py --dry-run   # preview
+python install.py             # install the packs as agent skills
 ```
 
-- `--sector`: short sector slug (lowercase, hyphenated, e.g. `med-device`). Sets
-  `automotive` and the repo name `jgs-<sector>-knowledge-packs`.
-- `--name`: sector display name (e.g. `"Medical Device"`). Sets `Automotive`.
-- `--orch`: orchestrator command slug (e.g. `med`). Sets `auto`; users type
-  `/<orch> <question>` after install.
-- `--target`: destination directory. It must not already exist or must be empty.
+Shell equivalents: `install.sh` (bash) and `install.ps1` (PowerShell). After
+install, each pack is invocable as an Agent Skill.
 
-Options:
+## Use
 
-- `--add-host HOST` (repeatable): adds a link-policy host to
-  `tooling/link-policy-hosts.txt` and the trusted inline set in
-  `.github/workflows/validate.yml` in one step. Use it when your sector's vetted
-  sources live on a host the template does not already list.
-- `--dry-run`: prints the full plan (files, token hits, host additions) and writes
-  nothing.
-
-After a successful mint:
-
-```bash
-cd <path>
-git init -b main && git add -A && git commit -m "chore: mint from sector-repo template"
-python install.py --dry-run
-```
-
-## What the template carries
-
-- **Legal root:** [LICENSE](LICENSE) (MIT, tooling and scaffolding only),
-  [NOTICE](NOTICE), [COPYRIGHT](COPYRIGHT), [SECURITY.md](SECURITY.md),
-  [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md), [CONTRIBUTING.md](CONTRIBUTING.md),
-  [CITATION.cff](CITATION.cff).
-- **Spec docs:** [docs/PACK-SPEC.md](docs/PACK-SPEC.md) (the pack contract),
-  [docs/SOURCE-VETTING.md](docs/SOURCE-VETTING.md) (source eligibility and tiers),
-  [docs/LICENSING.md](docs/LICENSING.md) (two-layer licence model and the link
-  policy), [docs/skill-usage.md](docs/skill-usage.md), and
-  [docs/FLEET-CONVENTIONS.md](docs/FLEET-CONVENTIONS.md) (fleet rules every minted
-  repo ships).
-- **Validators:** `tooling/validate_pack.py` (pack structure), `tooling/build_pack.py`,
-  `tooling/check_release.py` (release gate), plus capability-map, classification, and
-  overlap checks.
-- **CI:** [.github/workflows/validate.yml](.github/workflows/validate.yml), kept in
-  parity with the local gate by `tooling/test_ci_gate.py`.
-- **Installer:** `install.py` / `install.sh` / `install.ps1` with a host-parity guard
-  (`tooling/test_install_guard.py`).
-- **Orchestrator stub:** `packs/auto/`, an explicit `/<orch> <question>`
-  router that carries no source content; point its routing map at your packs.
-- **Empty catalogue stubs:** [SKILLS.md](SKILLS.md), [catalog.json](catalog.json),
-  `docs/packs.html`, [CHANGELOG.md](CHANGELOG.md), [RELEASE-INFO.txt](RELEASE-INFO.txt)
-  at version 0.1.0.
+- **`/auto <question>`**: the orchestrator. Type a free-text automotive question
+  and it routes through a curated topic, agency, and deliverable map to the right
+  pack(s), reads them, and answers with pack and chapter citations.
+- **`/nhtsa-vehicle`**: the content pack. NHTSA Cybersecurity Best Practices,
+  Automated Driving Systems 2.0 guidance, and 49 CFR Part 571 (FMVSS) reference
+  notes in one skill.
+- **`/automotive-signpost`** and **`/functional-safety-signpost`**: signpost
+  packs. Citation-only maps into the automotive and functional-safety standards
+  landscape; they name where a standard lives and what it covers, and carry no
+  standard text.
 
 ## Gates
 
@@ -99,26 +64,16 @@ python tooling/check_release.py         # release readiness: files, versions, le
 python tooling/test_ci_gate.py          # proves CI (.github/workflows/validate.yml) checks the same things
 ```
 
-CI green is not release-ready: `check_release.py` is the pre-tag gate. It prints a
-`RELEASE CHECK: PASS (v<version> @ <sha>)` receipt; run it before tagging and confirm
-the sha matches the commit you tag. A minted repo is release-ready only when all three
-gates exit 0 (see the mint bar in [docs/FLEET-CONVENTIONS.md](docs/FLEET-CONVENTIONS.md)).
-
-## Smoke proof
-
-```bash
-python tooling/test_instantiate.py
-```
-
-Mints a throwaway sector into a temp directory and runs all three gates against the
-minted output, then asserts zero token residue. Exits 0 with `SMOKE PROOF PASS`.
+CI green is not release-ready: `check_release.py` is the pre-tag gate. Run it
+before tagging and confirm the sha on its `RELEASE CHECK: PASS` receipt matches
+the commit you tag.
 
 ## Licence
 
 Two separable layers:
 
-- **Tooling and scaffolding:** [MIT](LICENSE) (JG Systems Consulting Ltd.).
-- **Pack content:** each pack carries its source's own licence, declared in
-  `packs/<slug>/LICENSE` and `packs/<slug>/PACK.yaml`, independent of the repo's MIT
-  licence. Attributions live in [NOTICE](NOTICE); the model is set out in
+- **Pack content:** Public Domain (US Government work, 17 U.S.C. 105) for the
+  NHTSA-derived material. Attributions and caveats live in [NOTICE](NOTICE) and
+  each `packs/<slug>/LICENSE`; the model is set out in
   [docs/LICENSING.md](docs/LICENSING.md).
+- **Tooling and scaffolding:** [MIT](LICENSE) (JG Systems Consulting Ltd.).
