@@ -1,6 +1,57 @@
 {
   "schema_version": 1,
   "map_version": "0.1.0",
-  "generated_on": "2026-09-24",
-  "notes": []
+  "generated_on": "2026-09-25",
+  "notes": [
+    {
+      "pack": "nhtsa-vehicle",
+      "chapter": "ch01-nhtsa-document-map.md",
+      "note": "Which NHTSA document answers which vehicle cyber, ADS, or FMVSS question; guidance versus regulation sort"
+    },
+    {
+      "pack": "nhtsa-vehicle",
+      "chapter": "ch02-cyber-process-and-leadership.md",
+      "note": "S1 leadership priority and risk-based cybersecurity development process (general practices through 4.2)"
+    },
+    {
+      "pack": "nhtsa-vehicle",
+      "chapter": "ch03-cyber-ops-sharing-incident-audit.md",
+      "note": "S1 post-production ops: Auto-ISAC sharing, vulnerability reporting, incident response, self-audit, education, serviceability"
+    },
+    {
+      "pack": "nhtsa-vehicle",
+      "chapter": "ch04-cyber-technical-controls.md",
+      "note": "S1 technical vehicle controls [T.1]-[T.25]: debug access, crypto, diagnostics, logs, wireless, OTA updates"
+    },
+    {
+      "pack": "nhtsa-vehicle",
+      "chapter": "ch05-ads-taxonomy-and-safety-elements.md",
+      "note": "ADS 2.0 Section 1: SAE levels as adopted, 12 safety design elements, Voluntary Safety Self-Assessment"
+    },
+    {
+      "pack": "nhtsa-vehicle",
+      "chapter": "ch06-ads-state-roles-and-best-practices.md",
+      "note": "ADS 2.0 Section 2: Federal and State roles, legislature and state highway safety official best practices"
+    },
+    {
+      "pack": "nhtsa-vehicle",
+      "chapter": "ch07-fmvss-part571-landscape.md",
+      "note": "49 CFR Part 571 Subpart A framework and selected FMVSS obligations landscape (101, 105/135, 111, 124, 126/136, 138, 141)"
+    },
+    {
+      "pack": "nhtsa-vehicle",
+      "chapter": "ch08-functional-safety-orientation.md",
+      "note": "Functional-safety concepts at orientation depth only; paywalled standards route to the signpost packs"
+    },
+    {
+      "pack": "nhtsa-vehicle",
+      "chapter": "glossary.md",
+      "note": "Shared NHTSA vehicle cyber, ADS, and FMVSS terms used across the pack"
+    },
+    {
+      "pack": "nhtsa-vehicle",
+      "chapter": "cheatsheet.md",
+      "note": "Cross-chapter decision checklists for cyber, ADS, and FMVSS consult questions"
+    }
+  ]
 }

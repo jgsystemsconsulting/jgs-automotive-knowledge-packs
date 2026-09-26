@@ -4,7 +4,19 @@
   "sector_slug": "automotive",
   "scope": "Automotive",
   "version": "0.1.0",
-  "updated": "2026-09-24",
-  "packs": [],
+  "updated": "2026-09-25",
+  "packs": [
+    {
+      "slug": "nhtsa-vehicle",
+      "title": "NHTSA Vehicle Cybersecurity, Automated Driving Systems, and FMVSS Guidance (Cybersecurity Best Practices Updated 2022, ADS 2.0, 49 CFR Part 571 selections)",
+      "publisher": "U.S. National Highway Traffic Safety Administration; reconstructed by JG Systems Consulting Ltd",
+      "source_version": "Source set pinned 2026-09-25 (documents dated September 2017 to the 2024 annual edition)",
+      "license": "Public Domain (US Government work, 17 U.S.C. 105)",
+      "license_tier": 1,
+      "commercial_use": true,
+      "chapters": 8,
+      "status": "live"
+    }
+  ],
   "planned": []
 }

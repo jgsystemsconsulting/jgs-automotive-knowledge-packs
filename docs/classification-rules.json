@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "map_version": "0.1.0",
-  "generated_on": "2026-09-24",
+  "generated_on": "2026-09-25",
   "rules_of_construction": [
     "Every chapter in every pack under packs/<slug>/chapters/ is assigned to exactly one capability cluster (best fit).",
     "Cross-cutting chapters carry a remark noting the strong secondary fit.",
@@ -9,13 +9,81 @@
     "Signpost packs contain no chapters and are not mapped.",
     "A standard's own process definitions go to the process cluster; performing the capability goes to the capability cluster."
   ],
-  "signpost_packs": [],
+  "signpost_packs": [
+    "automotive-signpost",
+    "functional-safety-signpost"
+  ],
   "support_filenames": [
     "glossary.md",
     "patterns.md",
     "cheatsheet.md"
   ],
   "support_policy": "Support-file membership is encoded per assignment in `assignments` (`is_support` true rows); this field is descriptive and not a derivation rule.",
-  "cluster_names": [],
-  "assignments": []
+  "cluster_names": [
+    "Cybersecurity & ADS",
+    "Regulatory & FMVSS",
+    "Functional Safety Orientation"
+  ],
+  "assignments": [
+    {
+      "pack": "nhtsa-vehicle",
+      "chapter": "ch02-cyber-process-and-leadership.md",
+      "cluster": "Cybersecurity & ADS",
+      "is_support": false
+    },
+    {
+      "pack": "nhtsa-vehicle",
+      "chapter": "ch03-cyber-ops-sharing-incident-audit.md",
+      "cluster": "Cybersecurity & ADS",
+      "is_support": false
+    },
+    {
+      "pack": "nhtsa-vehicle",
+      "chapter": "ch04-cyber-technical-controls.md",
+      "cluster": "Cybersecurity & ADS",
+      "is_support": false
+    },
+    {
+      "pack": "nhtsa-vehicle",
+      "chapter": "ch05-ads-taxonomy-and-safety-elements.md",
+      "cluster": "Cybersecurity & ADS",
+      "is_support": false
+    },
+    {
+      "pack": "nhtsa-vehicle",
+      "chapter": "ch06-ads-state-roles-and-best-practices.md",
+      "cluster": "Cybersecurity & ADS",
+      "is_support": false
+    },
+    {
+      "pack": "nhtsa-vehicle",
+      "chapter": "ch01-nhtsa-document-map.md",
+      "cluster": "Regulatory & FMVSS",
+      "is_support": false
+    },
+    {
+      "pack": "nhtsa-vehicle",
+      "chapter": "ch07-fmvss-part571-landscape.md",
+      "cluster": "Regulatory & FMVSS",
+      "is_support": false
+    },
+    {
+      "pack": "nhtsa-vehicle",
+      "chapter": "glossary.md",
+      "cluster": "Regulatory & FMVSS",
+      "is_support": true
+    },
+    {
+      "pack": "nhtsa-vehicle",
+      "chapter": "cheatsheet.md",
+      "cluster": "Regulatory & FMVSS",
+      "is_support": true
+    },
+    {
+      "pack": "nhtsa-vehicle",
+      "chapter": "ch08-functional-safety-orientation.md",
+      "cluster": "Functional Safety Orientation",
+      "is_support": false
+    }
+  ]
 }

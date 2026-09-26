@@ -71,7 +71,14 @@ This list exists so the repo never ships something that triggers a takedown.
 
 | Source | Why excluded |
 |---|---|
-| **ISO 26262, IEC 61508, ISO-SAE 21434** (functional safety, functional safety of E/E systems, road-vehicle cybersecurity engineering standards) | Paywalled, all-rights-reserved; per-user licence model. Hard stop. (programme research 2026-09-24, docs/superpowers ingest bundle.) |
+| **ISO 26262:2018 series** (Road vehicles - Functional safety, parts 1-12) | Paywalled, all-rights-reserved; per-user licence model. Hard stop. Signpost designation only (automotive-signpost + functional-safety-signpost). (automotive sector build 2026-09-25; programme research 2026-09-24.) |
+| **ISO 21448:2022** (Road vehicles - Safety of the intended functionality, SOTIF) | Paywalled, all-rights-reserved. Hard stop. Signpost designation only (functional-safety-signpost). (automotive sector build 2026-09-25.) |
+| **ISO/SAE 21434:2021** (Road vehicles - Cybersecurity engineering) | Paywalled, all-rights-reserved; per-user licence model. Hard stop. Signpost designation only (automotive-signpost). (automotive sector build 2026-09-25; programme research 2026-09-24.) |
+| **IEC 61508 ed 2.0 parts 1-7** (Functional safety of E/E/PE safety-related systems) | Paywalled, all-rights-reserved. Hard stop. Signpost designation only (functional-safety-signpost). (automotive sector build 2026-09-25; programme research 2026-09-24.) |
+| **SAE J3016_202104** (Taxonomy and Definitions for Terms Related to Driving Automation Systems) | Paywalled SAE standard. Hard stop. Signpost designation only (automotive-signpost); ADS 2.0 may cite the name. (automotive sector build 2026-09-25.) |
+| **UL 4600 Ed 3** (Standard for Evaluation of Autonomous Products) | Paywalled UL standard. Hard stop. Signpost designation only (functional-safety-signpost). (automotive sector build 2026-09-25.) |
+| **Automotive SPICE PRA/PAM v4.0** (VDA QMC) | Free download from VDA QMC but (c) VDA QMC with no-derivatives grant. Citation only; never package text. Signpost row (automotive-signpost). (automotive sector build 2026-09-25.) |
+| **UNECE R155 (CSMS) and R156 (SUMS)** | Free download from unece.org but (c) UNECE. Citation only; never package text. Signpost rows (automotive-signpost). Re-verify gate PASSED 2026-09-25 (official PDFs archived at build). (automotive sector build 2026-09-25.) |
 | **RTCA DO-178C / DO-254, SAE ARP4754A / ARP4761** (avionics software/hardware design assurance; civil aircraft systems development and safety assessment) | Paywalled; no redistribution or derivative grant. (programme research 2026-09-24, docs/superpowers ingest bundle.) |
 | **ECSS standards (ESA/European space)** | Free download from ecss.nl but © ESA; "No ECSS document may be reproduced in any form without the explicit consent of ESA" (ECSS-P-00C §5.8). A pack is reproduction + derivative work. Carried from the exemplar vetting. (programme research 2026-09-24, docs/superpowers ingest bundle.) |
 | **Def Stan documents (UK defence standards)** | Case-by-case: Crown copyright, downloads free of charge but registration-gated via the DSTAN portal. **Def Stan 00-051 is UNVERIFIED** pending a registered DSTAN user recording the cover licence statement; excluded until then. If OGL v3.0 applies inside the document → Tier 2; if bespoke MOD-consent/no-reproduction terms → stays Excluded. (programme research 2026-09-24, docs/superpowers ingest bundle.) |
@@ -104,12 +111,16 @@ For industry families in this table, the per-document capture rule (including th
 
 ## Blocking checklists
 
-- **UNECE R155 / R156**: availability re-verification is required before any automotive
-  signpost row depends on it.
+- **UNECE R155 / R156**: re-verify gate PASSED 2026-09-25 (official PDFs archived at
+  build). Free download, (c) UNECE; citation-only signpost rows, never full text.
 
 ## Cleared families (programme research 2026-09-24)
 
 tier-1 US federal publisher works cleared for sector use (FDA, NHTSA, NRC, FAA orders); tier-2 gov.uk OGL JSPs, per-document capture.
+
+| Source set | Basis |
+|---|---|
+| **NHTSA vehicle reference set S1-S3** (S1 Cybersecurity Best Practices for the Safety of Modern Vehicles, Updated 2022 final, 87 FR 55459, docket NHTSA-2020-0087; S2 Automated Driving Systems 2.0: A Vision for Safety, DOT HS 812 442, September 2017; S3 49 CFR Part 571 FMVSS selections, GovInfo annual edition 2024) | US Government works, 17 U.S.C. § 105. Cleared Tier 1 for the nhtsa-vehicle pack (automotive sector build 2026-09-25; binding spec docs/superpowers/specs/2026-09-25-automotive-sector-repo.md). SOURCE-VETTING carries no nhtsa.gov/ecfr.gov URLs; FR docket ids and document titles only. |
 
 Sector builds start from this explicit allowlist; anything not listed still goes through
 the tiers above.

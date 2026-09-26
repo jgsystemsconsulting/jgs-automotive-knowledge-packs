@@ -1,0 +1,34 @@
+{
+  "name": "jgs-automotive-knowledge-packs",
+  "displayName": "JGS Automotive Knowledge Packs",
+  "description": "Licence-vetted automotive knowledge-pack skills reconstructed from genuinely open, commercially-redistributable sources (NHTSA public-domain guidance). Ask a topic; the agent reads the right chapter and answers from reference notes, not a hazy recollection.",
+  "version": "0.1.0",
+  "author": {
+    "name": "JG Systems Consulting Ltd."
+  },
+  "homepage": "https://github.com/jgsystemsconsulting/jgs-automotive-knowledge-packs",
+  "repository": "https://github.com/jgsystemsconsulting/jgs-automotive-knowledge-packs",
+  "license": "MIT",
+  "keywords": [
+    "automotive",
+    "knowledge-packs",
+    "agent-skills",
+    "nhtsa",
+    "vehicle-cybersecurity",
+    "ads",
+    "fmvss",
+    "functional-safety"
+  ],
+  "category": "developer-tools",
+  "tags": [
+    "automotive",
+    "reference",
+    "skills"
+  ],
+  "skills": [
+    "./packs/auto/SKILL.md",
+    "./packs/nhtsa-vehicle/SKILL.md",
+    "./packs/automotive-signpost/SKILL.md",
+    "./packs/functional-safety-signpost/SKILL.md"
+  ]
+}
