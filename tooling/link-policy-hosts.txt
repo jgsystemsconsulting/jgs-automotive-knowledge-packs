@@ -9,6 +9,7 @@ dau.edu
 dla.mil
 dod.mil
 dodcio
+ecfr.gov
 energy.gov
 eur-lex
 europa.eu
@@ -17,10 +18,9 @@ govinfo.gov
 nasa.gov
 nato.int
 nde-ed.org
+nhtsa.gov
 nist.gov
 ntrs
 ocw.mit
 omg.org
 sebokwiki
-nhtsa.gov
-ecfr.gov
