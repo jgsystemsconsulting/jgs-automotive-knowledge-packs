@@ -1,0 +1,132 @@
+nhtsa-vehicle pack: content licence
+===================================
+
+This pack is derived from the three US National Highway Traffic Safety
+Administration (NHTSA) and Federal Register sources listed below (S1 to S3 of
+the source-vetting record). Their landing-page URLs are held in the build
+record dated 2026-09-25 and are not reproduced here; the repository link
+policy bans source-material hosts (see ../../docs/LICENSING.md).
+
+Source licence: Public Domain (US Government work, 17 U.S.C. 105)  (tier 1; see
+../../docs/SOURCE-VETTING.md). No source-material download link is published.
+
+All three sources are works of the United States Government prepared by NHTSA
+and Office of the Federal Register staff, and are NOT subject to copyright
+protection in the United States (17 U.S.C. 105). They are in the public
+domain: anyone may reproduce, transform, and redistribute them for any
+purpose, including commercially, without permission and without any
+attribution or share-alike obligation.
+
+Attribution to NHTSA is provided as a courtesy (see the repository NOTICE),
+not as a legal obligation. NHTSA does not endorse this pack or its authors.
+
+Each source below carries a vetting block: exact title, publisher office,
+pinned date, status, publication citation, licence basis, what the pack
+reconstructs from it, and the chapters that use it. Items marked "confirmed
+from PDF" were checked against the local source-text captures on 2026-09-25.
+
+Reconstruction: all pack content is synthesized reference notes in the authors'
+own words. The documents themselves are not republished here; quotations are
+limited to short passages (two-sentence cap per quote, enforced by the pack
+gates).
+
+NOTE: This file governs the CONTENT of this pack. The repository tooling is
+licensed separately under MIT (see ../../LICENSE).
+
+
+THE THREE SOURCES
+=================
+
+S1  Cybersecurity Best Practices for the Safety of Modern Vehicles, Updated 2022
+    Publisher: US DOT National Highway Traffic Safety Administration
+    Final guidance   Issued: September 2022 (publication code 15745-090822-v2a
+    on the last page; 25 PDF pages, confirmed from PDF)
+    Publication citation: notice published in the Federal Register at 87 FR
+    55459, document 2022-19507, published 2022-09-09; docket NHTSA-2020-0087
+    Status: Final. A docket re-check on 2026-09-25 (regulations.gov API and
+    Federal Register API) found no newer final. This is the 2022 final, not
+    the 2016 draft-era document (DOT HS 812 333, "Cybersecurity Best Practices
+    for Modern Vehicles"), confirmed from the cover page, the "2022 Update
+    Release Notes", and the enumerated-practice convention.
+    Basis: US Government work, 17 U.S.C. 105
+    Reconstructs: the 45 general best practices ([G.1] to [G.45], confirmed
+    from PDF) and 25 technical best practices ([T.1] to [T.25], confirmed from
+    PDF): leadership priority for product cybersecurity, the vehicle
+    development process with explicit cybersecurity risk assessment, inventory
+    and management of hardware and software assets, cybersecurity testing and
+    monitoring, information sharing (Auto-ISAC), security vulnerability
+    reporting, organizational incident response, self-auditing, education,
+    aftermarket and user-owned devices, serviceability, and the technical
+    controls (debug access, cryptography, diagnostics, internal communications,
+    event logs, wireless paths, software and over-the-air updates).
+    Used in: ch02, ch03, ch04
+
+S2  Automated Driving Systems 2.0: A Vision for Safety (DOT HS 812 442)
+    Publisher: US DOT National Highway Traffic Safety Administration
+    Voluntary guidance   Issued: September 2017   Status: still current per the
+    Federal Register notice of 2026-07-31 (programme research)
+    Basis: US Government work, 17 U.S.C. 105
+    Reconstructs: the voluntary guidance structure for automated driving
+    systems: SAE International's levels of driving automation as adopted and
+    described in the document, the 12 priority safety design elements (system
+    safety; operational design domain; object and event detection and
+    response; fallback (minimal risk condition); validation methods; human
+    machine interface; vehicle cybersecurity; crashworthiness; post-crash ADS
+    behavior; data recording; consumer education and training; and federal,
+    state, and local laws), and the Voluntary Safety Self-Assessment. Its Best Practices
+    section covers Federal and State roles, including best practices for
+    legislatures and for state highway safety officials. SAE J3016 itself is
+    copyrighted; this pack restates only what the NHTSA document says and
+    names the standard.
+    Used in: ch05, ch06
+
+S3  49 CFR Part 571 selections: Federal Motor Vehicle Safety Standards (FMVSS)
+    Publisher: Office of the Federal Register (eCFR)   Regulation
+    Text currency: GovInfo annual edition 2024 (CFR-2024-title49-vol6, Part
+    571; 959 PDF pages), retrieved 2026-09-25 via GovInfo
+    Basis: US Government work, 17 U.S.C. 105
+    Reconstructs: a landscape of obligations, not a republication: the Subpart
+    A general framework (scope, definitions, applicability, incorporation by
+    reference, and the manufacturer self-certification duty) plus the selected
+    standards named in the build record: 101 (controls and displays), 105 and
+    135 (brake systems), 111 (rear visibility), 124 (accelerator control
+    systems), 126 and 136 (electronic stability control systems), 138 (tire
+    pressure monitoring systems), and 141 (minimum sound requirements for
+    hybrid and electric vehicles), stated as named obligations with their
+    engineering intent. Full standard bodies are not dumped into the pack.
+    Used in: ch01, ch07
+
+
+EXCLUDED MATERIAL (cited by name only; no text reproduced)
+=========================================================
+
+The following standards and regulations are NOT licensed to this pack. NHTSA
+guidance and the FMVSS reference them; the pack names them and restates the
+agency's own recognition and discussion text only. It reproduces no standard
+text, table, requirement, or clause wording from any of them.
+
+-   ISO 26262 series, "Road vehicles: Functional safety" (2018, parts 1 to 12),
+    and its base standard IEC 61508, "Functional safety of electrical/
+    electronic/programmable electronic safety-related systems" (2010, parts 1
+    to 7). Paywalled; cited by name only, including in the ch08 orientation.
+-   ISO 21448:2022, "Road vehicles: Safety of the intended functionality"
+    (SOTIF). Paywalled; cited by name only.
+-   ISO/SAE 21434:2021, "Road vehicles: Cybersecurity engineering". Paywalled;
+    named by the S1 source itself and cited by name only here.
+-   SAE J3016_202104, "Taxonomy and Definitions for Terms Related to Driving
+    Automation Systems". Paywalled; ADS 2.0 adopts its levels, and this pack
+    names it without reproducing it.
+-   UL 4600, "Standard for Evaluation of Autonomous Products" (Ed 3, 2023).
+    Paywalled; cited by name only.
+-   Automotive SPICE PRA/PAM v4.0 (VDA QMC, 2023). Free to download but
+    (c) VDA QMC with no-derivatives terms; cited by name only.
+-   UNECE Regulation No. 155 (cyber security and cyber security management
+    system) and Regulation No. 156 (software update and software updates
+    management system). Free to download but (c) UNECE; citation only, never
+    full text.
+
+These exclusions and the cleared status of S1 to S3 are recorded in
+../../docs/SOURCE-VETTING.md. Buy copyrighted items from ISO, SAE, UL, IEC, or
+VDA QMC as applicable; the automotive-signpost pack carries the automotive
+standards pointer table and the functional-safety-signpost pack carries the
+functional-safety pointer table, including the free-download paths.
