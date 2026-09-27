@@ -71,11 +71,27 @@ jobs:
           # direction; a missing or unparseable data file counts as divergence.
           import re, sys, pathlib
           TRUSTED_HOSTS = frozenset({
-              "cisa.gov", "dau.edu", "dla.mil", "dod.mil", "dodcio", "energy.gov",
-              "eur-lex", "europa.eu", "everyspec.com", "govinfo.gov", "nasa.gov",
-              "nato.int", "nde-ed.org", "nist.gov", "ntrs", "ocw.mit", "omg.org",
+              "cisa.gov",
+              "dau.edu",
+              "dla.mil",
+              "dod.mil",
+              "dodcio",
+              "ecfr.gov",
+              "energy.gov",
+              "eur-lex",
+              "europa.eu",
+              "everyspec.com",
+              "govinfo.gov",
+              "nasa.gov",
+              "nato.int",
+              "nde-ed.org",
+              "nhtsa.gov",
+              "nist.gov",
+              "ntrs",
+              "ocw.mit",
+              "omg.org",
               "sebokwiki",
-           "nhtsa.gov", "ecfr.gov",})
+          })
           DATA_PATH = "tooling/link-policy-hosts.txt"
           TOKEN = re.compile(r"^[A-Za-z0-9.-]+$")
 
