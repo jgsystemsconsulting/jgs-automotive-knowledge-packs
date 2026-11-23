@@ -81,3 +81,7 @@ A sector earns its own repo when a single gate-green instantiation has all of:
 Below the bar the sector stays in programme backlog. Holding options are a
 backlog row and, once the hub exists, a hub README mention. No empty repos and no
 single-signpost-only forks.
+
+## Slug checker
+
+The fleet slug checker is advisory, the canonical file is `jgs-reference-skill/tools/check_pack_slug_dupes.py`, and it is not a CI gate.
